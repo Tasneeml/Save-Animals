@@ -22,3 +22,14 @@ function creatanimals() {
     }
     return animals;
 }
+
+
+function Foring() {
+    var foringAnimal = '';
+    var userchoice = prompt("Control how many lovely animals do you want?")
+for (var i = 0; i < userchoice; i++) {
+    foringAnimal = foringAnimal + "lovely animals";
+}
+  return foringAnimal;
+
+}
