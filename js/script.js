@@ -1,35 +1,14 @@
 
-var showorder = function () {
-    //input
-
-    var userorder = prompt("what would you like to order")
-    var orderImage;
-    //proceesig 
-
-    //out put
-    return;
-
-
+var today= new Date();
+var hourNow = today.getHours();
+var greeting;
+if (hourNow > 18) {
+greeting= 'Good evening!';
+} else if (hourNow > 12) {
+greeting = ' Good afternoon!';
+} else if (hourNow > 0) {
+greeting = 'Good morni ng!';
+} else {
+       greeting = 'Welcome! ' ;
 }
-function creatanimals() {
-    var animals = prompt("whats the age?");
-    if  (animals > 6 ){
-    animals = 'big';
-    } else if ( animals<6 ){
-    animals = 'small';
-    }else {
-        animals = "idk";
-    }
-    return animals;
-}
-
-
-function Foring() {
-    var foringAnimal = '';
-    var userchoice = prompt("Control how many lovely animals do you want?")
-for (var i = 0; i < userchoice; i++) {
-    foringAnimal = foringAnimal + "lovely animals";
-}
-  return foringAnimal;
-
-}
+document.write('<h3>' +greeting + ' </h3> ');
